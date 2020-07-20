@@ -4,18 +4,9 @@ for(var i = 0; i < elem.length; i++){
     
     console.log(elem[i].innerHTML.length);
     if(elem[i].innerHTML.length>700){
-        elem[i].innerHTML  = "length";
+        // elem[i].innerHTML  = "length";
     }
-    elem[i].onclick = function(){
-        if(this.innerHTML === "see less"){
-            this.previousSibling.style.display = "none";
-            this.innerHTML = "... see more";
-        }
-        else{
-            this.previousSibling.style.display = "inline";
-            this.innerHTML = "see less";
-        }
-    }
+  
 }
 
 var blurBackground =function(){
